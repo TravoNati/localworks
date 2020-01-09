@@ -686,9 +686,28 @@ div.StatusBoxwl24 {
 		</head>
 		
         <body>
-         <form action="index.php" method="post">
+         <form name="frm" form action="index.php" method="post">
               <p>Location Search: <input type ="text" required  id = "idName" size="20" style="text-align:left" name="name" /></p>
-              <p><input type ="Submit" required="required" name ="search" value= "Search" /></p>
+              <p><id="button" data-text-loading="Loading..." input type ="Submit" required="required" name ="search" value= "Search" /></p>
+              <button class="btn btn-lg btn-secondary" id="button" data-text-loading="Loading...">Search</button>
+<script>
+		
+
+$('#button').click(function() {
+	if (document.forms['frm'].idName.value === "") {
+		// if empty
+
+    return false;
+  }
+  // If not empty
+  $('#button').button();
+
+    $(this).html('<img  src="loading1.svg" />');
+	
+});
+ 
+
+</script>
         </form>
 		</body>
 		<?php
