@@ -91,7 +91,7 @@
 	<div id="fh5co-page">
 		<nav id="fh5co-nav" role="navigation">
 			<ul>
-				<li class="animate-box fh5co-active"><a href="#" class="transition">Home</a></li>
+				<li class="animate-box fh5co-active"><a href="index.php" class="transition">Home</a></li>
 				<li class="animate-box fh5co"><a href="http://error-inspector.herokuapp.com/" target="_blank" rel="noopener noreferrer">Error Inspector</a></li>
 			</ul>
 	
@@ -122,6 +122,7 @@
 		<h1>
 			
 			<h1>
+			
 <?php
 $url = 'http://login.tripinsta.com/';
 $ch = curl_init($url);
@@ -329,9 +330,9 @@ echo '<br>';
 
 				
 </div>
-   
+
    <div class="StatusBoxwl">
-		
+  
 		<h1>
 			WhiteLabel Status:
 			<h1>
@@ -681,71 +682,17 @@ div.StatusBoxwl24 {
 }
 
 </style>
-<div align =middle>
-<div class="SearchBox">
-		</head>
-		
-        <body>
-         <form name="frm" form action="index.php" method="post">
-              <p>Location Search: <input type ="text" required  id = "idName" size="20" style="text-align:left" name="name" /></p>
-              <p><id="button" data-text-loading="Loading..." input type ="Submit" required="required" name ="search" value= "Search" /></p>
-              <button class="btn btn-lg btn-secondary" id="button" data-text-loading="Loading...">Search</button>
 <script>
-		
-
-$('#button').click(function() {
-	if (document.forms['frm'].idName.value === "") {
-		// if empty
-
-    return false;
-  }
-  // If not empty
-  $('#button').button();
-
-    $(this).html('<img  src="loading1.svg" />');
+  function resizeIframe(obj) {
+    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+	obj.style.width = '400px';
 	
-});
- 
-
+  }
 </script>
-        </form>
-		</body>
-		<?php
-@$search =$_POST['name'];
-$lines = file('LocationList.txt');
-
-$found = false;
-foreach($lines as $line)
-{
-  if(strpos($line, $search) !== false)
-  {
-    $found = true;
-	
-	echo "<center>";
-    $res = explode("|", $line);
-	    printf("Location ID: ");
-		 printf($res[0]);
-		 printf(" | ");
-		 printf("City: ");
-		 printf($res[1]);
-		 printf(" | ");
-		 printf("Country: ");
-		 printf($res[4]);
- echo "<html><br>";
-     $res = explode("|", $line);
-
-
- echo "<html><br>";
-echo "</center>";
-  }
-}
-
-if(!$found)
-{
-  echo 'No match found';
-}
-?>
+  <div class="SearchBox">
+<iframe src="test.php" frameborder="0" scrolling="no" onload="resizeIframe(this)" />
 	</html>
+	<div>
 	<div>
 		<div>
 	</center>
