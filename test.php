@@ -49,7 +49,7 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Cookie -->
@@ -82,7 +82,7 @@
 	</head>
 
 	<body>
-
+	<body style="background-color:#2E3141;">
 <div align =middle>
 
 		</head>
@@ -106,7 +106,7 @@ $('#button').click(function() {
   // If not empty
   $('#button').button();
 
-    $(this).html('<img  src="loading1.svg" />');
+    $(this).html('<Div style="margin-top:-20px" />; <img  src="loading1.svg" />');
 	$(this).document.forms['frm'].style.display = "none";
 });
  
@@ -149,3 +149,4 @@ if(!$found)
   echo 'No match found';
 }
 ?>
+<body style="background-color:#2E3141;">
