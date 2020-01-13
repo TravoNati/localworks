@@ -115,7 +115,7 @@
 			<br>
    <html>
    <center>
-   
+
 
    <div class="StatusBoxwl2">
 		
@@ -690,7 +690,8 @@ div.StatusBoxwl24 {
   }
 </script>
   <div class="SearchBox">
-<iframe src="test.php" frameborder="0" scrolling="no" onload="resizeIframe(this)" />
+<iframe src="test.php" frameborder="0" scrolling="no" onload="resizeIframe(this)">
+
 	</html>
 	<div>
 	<div>

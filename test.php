@@ -121,7 +121,7 @@ $lines = file('LocationList.txt');
 $found = false;
 foreach($lines as $line)
 {
-  if(strpos($line, $search) !== false)
+  if(stripos($line, $search) !== false)
   {
     $found = true;
 	
