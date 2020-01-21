@@ -16,13 +16,7 @@
   <!-- 
 	//////////////////////////////////////////////////////
 
-	FREE HTML5 TEMPLATE 
-	DESIGNED & DEVELOPED by FREEHTML5.CO
-		
-	Website: 		http://freehtml5.co/
-	Email: 			info@freehtml5.co
-	Twitter: 		http://twitter.com/fh5co
-	Facebook: 		https://www.facebook.com/fh5co
+
 
 	//////////////////////////////////////////////////////
 	 -->
@@ -91,8 +85,7 @@
 	<div id="fh5co-page">
 		<nav id="fh5co-nav" role="navigation">
 			<ul>
-				<li class="animate-box fh5co-active"><a href="index.php" class="transition">Home</a></li>
-				<li class="animate-box fh5co"><a href="http://error-inspector.herokuapp.com/" target="_blank" rel="noopener noreferrer">Error Inspector</a></li>
+				
 			</ul>
 	
 	
@@ -123,209 +116,12 @@
 			
 			<h1>
 			
-<?php
-$url = 'http://login.tripinsta.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
 
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Tripinsta:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
 
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://login.tripinsta.com/">Tripinsta::</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-<?php
-$url = 'http://bookings.ezbookbyabc.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
 
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">ABC global:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
 
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://bookings.ezbookbyabc.com/">ABC global:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
 
-<?php
-$url = 'http://agent.rooooms.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
 
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Utravel:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://agent.rooooms.com/">Utravel:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-
-<?php
-$url = 'http://agents.checkinenlinea.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Check In Viajes:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://agents.checkinenlinea.com/">Check In Viajes:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-
-<?php
-$url = 'http://szallas.mortons.hu/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Mortons Travel:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://szallas.mortons.hu/">Mortons Travel:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-
-<?php
-$url = 'http://hotel.graficon.cz/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Graficon:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://hotel.graficon.cz">Graficon:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-				<?php
-$url = 'http://hotels.alphaflightguru.com';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Alpha Guru:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://hotels.alphaflightguru.com">Alpha Guru:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-				<?php
-$url = 'http://b2b.taletravel.ro';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">TaleTravel:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://b2b.taletravel.ro">TaleTravel:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
-
-<?php
-$url = 'http://b2b.skyhubonline.com';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">SkyHubOnline:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://b2b.skyhubonline.com">SkyHubOnline:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
 
 
 				
@@ -334,172 +130,12 @@ echo '<br>';
    <div class="StatusBoxwl">
   
 		<h1>
-			WhiteLabel Status:
+			
 			<h1>
-<?php
-$url = 'http://b2b.swtravel.az';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
 
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">SWTravel:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
 
-	echo '<span style="color:#ffffff;text-align:center;"><a href="http://b2b.swtravel.az">Travel-Life:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';		echo '<br>';
-	}
-				?>
 
-<?php
-$url = 'http://online.travel-life.pro/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
 
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Travel-Life:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-		echo '<span style="color:#ffffff;text-align:center;"><a href="http://online.travel-life.pro/">Travel-Life:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-				?>
-
-				<?php
-$url = 'http://agent.hoteltravelagent.biz/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Madison Ave:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-		echo '<span style="color:#ffffff;text-align:center;"><a href="https://agent.hoteltravelagent.biz/">Madison Ave::</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-				?>
-								<?php
-$url = 'http://b2b.nhahotels.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">NHA Hotels:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-		echo '<span style="color:#ffffff;text-align:center;"><a href="http://b2b.nhahotels.com/">NHA Hotels:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-				?>
-
-<?php
-$url = 'http://backoffice.tektraveler.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">TekTraveler:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-		echo '<span style="color:#ffffff;text-align:center;"><a href="https://backoffice.tektraveler.com/">TekTraveler:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-				?>
-<?php
-$url = 'http://clients.ezeerooms.com/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Ezeerooms:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-		echo '<span style="color:#ffffff;text-align:center;"><a href="https://clients.ezeerooms.com/">Ezeerooms:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-				?>
-
-<?php
-$url = 'http://agent.almosafer.net/';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200 OR $info == 303) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Almosafer:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-
-		echo '<span style="color:#ffffff;text-align:center;"><a href="https://agent.almosafer.net/">Almosafer:</href></span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-				?>
 
 </div>
    
@@ -509,136 +145,23 @@ echo '<br>';
 		<h1>
 			Main Clusters:
 			<h1>
-<?php
-$url = 'http://worldtravelink.com';
-
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">BackOffice:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-echo '<br>';
-}
-    Else {
-	
-		echo '<span style="color:#ffffff;text-align:center;">BackOffice:</span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
 
 
-
-
-				?>
-
-<?php
-
-$url = 'http://services.travolutionary.com/bookingservices/dynamicdataservice.svc';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Shared Cluster:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-	echo '<br>';
-
-}
-    Else {
-	
-		echo '<span style="color:#ffffff;text-align:center;">Shared Cluster:</span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-
-	
-
-
-				?>
 					
 
 				
-<?php
-
-$url = 'http://almosafer-services.travolutionary.com/bookingservices/dynamicdataservice.svc';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">Almosafer Cluster:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-
-	echo '<br>';
-
-}
-    Else {
-	
-		echo '<span style="color:#ffffff;text-align:center;">Almosafer Cluster:</span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-
-	
 
 
-				?>
 
-<?php
-
-$url = 'http://snaptravel-services.travolutionary.com/bookingservices/dynamicdataservice.svc';
-$ch = curl_init($url);
-curl_setopt($ch, CURLOPT_USERAGENT, "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:25.0) Gecko/20100101 Firefox/25.0");
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-curl_exec($ch);
-$info = curl_getinfo($ch, CURLINFO_HTTP_CODE);
-curl_close($ch);
-
-if ($info == 200) {
-	
-	echo '
-	<span style="color:#ffffff;text-align:center;">SnapTravel Cluster:</span><span style="color:#AFA;text-align:center;"> Online</span>
-	';
-	echo '<br>';
-
-}
-    Else {
-	
-		echo '<span style="color:#ffffff;text-align:center;">SnapTravel Cluster:</span><span style="color:#ff1a1a;text-align:center;"> Offline</span>';
-		echo '<br>';
-	}
-
-	
-
-
-				?>
 				</div>
 </div>
 
 <style>
 div.SearchBox {
 	position: relative;
-  left: 12px;
+  left: 0px;
   right: 316px;
-  top: -772px;
+  top: -498px;
   padding: 20px;
   border-radius: 25px;
   border: 1px solid #808080;
@@ -685,7 +208,7 @@ div.StatusBoxwl24 {
 <script>
   function resizeIframe(obj) {
     obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-	obj.style.width = '400px';
+	obj.style.width = '900px';
 	
   }
 </script>

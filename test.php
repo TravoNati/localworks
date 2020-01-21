@@ -114,39 +114,45 @@ $('#button').click(function() {
 </script>
         </form>
 		</body>
-		<?php
-@$search =$_POST['name'];
-$lines = file('LocationList.txt');
+<?php
 
-$found = false;
-foreach($lines as $line)
+if (isset($_POST['name']))
 {
-  if(stripos($line, $search) !== false)
-  {
-    $found = true;
-	
-	echo "<center>";
-    $res = explode("|", $line);
-	    printf("Location ID: ");
-		 printf($res[0]);
-		 printf(" | ");
-		 printf("City: ");
-		 printf($res[1]);
-		 printf(" | ");
-		 printf("Country: ");
-		 printf($res[4]);
- echo "<html><br>";
-     $res = explode("|", $line);
+    echo "<table style='border: 1px solid black;'>";
+    echo "
+    <tr>
+        <th>LocationId</th>
+        <th>LocationName</th>
+        <th>RegionName</th>
+        <th>State</th>
+        <th>CountryCode</th>
+        <th>Latitude</th>
+		<th>Longitude</th>
+		<th>Radius(Meters)</th>
+    </tr>";
 
-
- echo "<html><br>";
-echo "</center>";
-  }
-}
-
-if(!$found)
-{
-  echo 'No match found';
+    $lines = file('LocationList.txt');
+    array_shift($lines);
+    
+    foreach ($lines as $line)
+    {
+		$res = explode("|", $line);
+		if (strtolower($res[1]) == strtolower($_POST['name']) || $res[0] == $_POST['name'])
+        {
+			
+            echo "<tr>";
+            echo "<th>" . $res[0] . "</th>";
+            echo "<th>" . $res[1] . "</th>";
+            echo "<th>" . $res[2] . "</th>";
+            echo "<th>" . $res[3] . "</th>";
+            echo "<th>" . $res[4] . "</th>";
+            echo "<th>" . $res[5] . "</th>";
+			echo "<th>" . $res[6] . "</th>";
+			echo "<th>" . $res[7] . "</th>";
+            echo "</tr>";
+        }
+    }
+    echo "</table>";
 }
 ?>
 <body style="background-color:#2E3141;">
