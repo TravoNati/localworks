@@ -88,7 +88,7 @@
 		</head>
 		
         <body>
-         <form name="frm" form action="test.php" method="post">
+         <form name="frm" form action="index.php" method="post">
 		 <h1>
               <p>Location Search: <input type ="text" required  id = "idName" style="width: 200px; text-align:left" name="name" /></p>
 			  </h1>
@@ -128,7 +128,7 @@ if (isset($_POST['name']))
         <th>CountryCode</th>
         <th>Latitude</th>
 		<th>Longitude</th>
-		<th>Radius(Meters)</th>
+		<th>Radius(KM)</th>
     </tr>";
 
     $lines = file('LocationList.txt');
@@ -139,7 +139,7 @@ if (isset($_POST['name']))
 		$res = explode("|", $line);
 		if (strtolower($res[1]) == strtolower($_POST['name']) || $res[0] == $_POST['name'])
         {
-			
+			$res[7] = $res[7] / 1000;
             echo "<tr>";
             echo "<th>" . $res[0] . "</th>";
             echo "<th>" . $res[1] . "</th>";
