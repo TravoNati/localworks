@@ -16,7 +16,13 @@
   <!-- 
 	//////////////////////////////////////////////////////
 
-
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FREEHTML5.CO
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
 
 	//////////////////////////////////////////////////////
 	 -->
@@ -43,17 +49,13 @@
 	<link rel="stylesheet" href="css/icomoon.css">
 	<!-- Bootstrap  -->
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" id="theme-switch" href="css/style.css">
+	
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Cookie -->
 	<script src="js/jquery.cookie.js"></script>
 	<script>
-	if ( $.cookie('styleCookie') === 'style-light.css') {
-		$('html, body').css('background', '#eeeeee');
-	} else if ($.cookie('styleCookie') === 'style.css') {
-		$('html, body').css('background', '#222222');
-	}
+
 	</script>
 	<!-- jQuery Easing -->
 	<script src="js/jquery.easing.1.3.js"></script>
@@ -78,175 +80,79 @@
 	<script src="js/respond.min.js"></script>
 	<![endif]-->
 	</head>
+
 	<body>
-	<!-- Loader -->
-	<div class="fh5co-loader"></div>
-	
-	<div id="fh5co-page">
-		<nav id="fh5co-nav" role="navigation">
-			<ul>
-				
-			</ul>
-	
-	
-			</a>
-		</nav>
+	<body style="background-color:#2E3141;">
+<div align =middle>
+
+		</head>
 		
-			<div class="container">
-				<div class="fh5co-text-wrap animate-box">
-					<div class="fh5co-intro-text">
-						<h1>Local.<span>Works</span>
-							
-					</div>
-				</div>
-	
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 text-center">
-			
-			<!-- Search Location-->
-			<br>
-   <html>
-   <center>
-
-
-   <div class="StatusBoxwl2">
-		
-		<h1>
-			
-			<h1>
-			
-
-
-
-
-
-
-
-
-				
-</div>
-
-   <div class="StatusBoxwl">
-  
-		<h1>
-			
-			<h1>
-
-
-
-
-
-</div>
-   
-        <head>	
-		<div class="StatusBox">
-		<div align =right>
-		<h1>
-			Main Clusters:
-			<h1>
-
-
-					
-
-				
-
-
-
-				</div>
-</div>
-
-<style>
-div.SearchBox {
-	position: relative;
-  left: 0px;
-  right: 316px;
-  top: -498px;
-  padding: 20px;
-  border-radius: 25px;
-  border: 1px solid #808080;
-}
-div.StatusBox {
-	position: relative;
-  left: 15px;
-  right: 316px;
-  top: -802px;
-  height: 372px;
-  padding: 20px;
-  border-radius: 25px;
-  border: 1px solid #808080;
-}
-
-div.StatusBoxwl {
-	position: relative;
-  left: -398px;
-  right: 200px;
-  top: -428px;
-  padding: 20px;
-  border-radius: 25px;
-}
-
-div.StatusBoxwl2 {
-	position: relative;
-  left: -69px;
-  right: 269px;
-  top: -21px;
-  padding: 20px;
-  border-radius: 25px;
-}
-
-div.StatusBoxwl24 {
-	position: relative;
-  left: -300px;
-  right: 200px;
-  top: -20px;
-  padding: 20px;
-  border-radius: 25px;
-}
-
-</style>
+        <body>
+         <form name="frm" form action="index.php" method="post">
+		 <h1>
+              <p>Location Search: <input type ="text" required  id = "idName" style="width: 200px; text-align:left" name="name" /></p>
+			  </h1>
+              <p><id="button" data-text-loading="Loading..." input type ="Submit" required="required" name ="search" value= "Search" /></p>
+              <button class="btn btn-lg btn-secondary" id="button" data-text-loading="Loading...">Search</button>
 <script>
-  function resizeIframe(obj) {
-    obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-	obj.style.width = '900px';
-	
+		
+
+$('#button').click(function() {
+	if (document.forms['frm'].idName.value === "") {
+		// if empty
+
+    return false;
   }
+  // If not empty
+  $('#button').button();
+
+    $(this).html('<Div style="margin-top:-20px" />; <img  src="loading1.svg" />');
+	$(this).document.forms['frm'].style.display = "none";
+});
+ 
+
 </script>
-  <div class="SearchBox">
-<iframe src="test.php" frameborder="0" scrolling="no" onload="resizeIframe(this)">
+        </form>
+		</body>
+<?php
 
-	</html>
-	<div>
-	<div>
-		<div>
-	</center>
-	
+if (isset($_POST['name']))
+{
+    echo "<table style='border: 1px solid black;'>";
+    echo "
+    <tr>
+        <th>LocationId</th>
+        <th>LocationName</th>
+        <th>RegionName</th>
+        <th>State</th>
+        <th>CountryCode</th>
+        <th>Latitude</th>
+		<th>Longitude</th>
+		<th>Radius(KM)</th>
+    </tr>";
 
-
-<!--
-<br>
-<br>Mapping Search
-<form action="https://mapping-hub.azurewebsites.net/EditMapping/ExternalAccess?hotelId=4027999&supplierKey=1159427" method="get" target="_blank">
-  Hotel ID: <input type="text" name="hotelId"><br>
-  Supplier ID: <input type="text" name="supplierKey"><br>
-  <input type="submit" value="Search">
-</form>
--->
-
-
-
-<br>
-		<footer id="fh5co-footer" class="">
-			<div class="container">
-				
-					<div class="col-md-12 text-center">
-						<p><small>&copy; Travolutionary </small> </p>
-						<ul class="fh5co-social">
-
-					
-					</div>
-				</div>
-			</div>
-		</footer>
-
-	</div>
+    $lines = file('LocationList.txt');
+    array_shift($lines);
+    
+    foreach ($lines as $line)
+    {
+		$res = explode("|", $line);
+		if (strtolower($res[1]) == strtolower($_POST['name']) || $res[0] == $_POST['name'])
+        {
+			$res[7] = $res[7] / 1000;
+            echo "<tr>";
+            echo "<th>" . $res[0] . "</th>";
+            echo "<th>" . $res[1] . "</th>";
+            echo "<th>" . $res[2] . "</th>";
+            echo "<th>" . $res[3] . "</th>";
+            echo "<th>" . $res[4] . "</th>";
+            echo "<th>" . $res[5] . "</th>";
+			echo "<th>" . $res[6] . "</th>";
+			echo "<th>" . $res[7] . "</th>";
+            echo "</tr>";
+        }
+    }
+    echo "</table>";
+}
+?>
+<body style="background-color:#2E3141;">
